@@ -79,15 +79,23 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="DFS와 BFS.cpp" />
+    <ClCompile Include="게임 맵 최단거리.cpp" />
+    <ClCompile Include="네트워크.cpp" />
+    <ClCompile Include="단어 변환.cpp" />
     <ClCompile Include="단지번호붙이기.cpp" />
+    <ClCompile Include="맥주 마시면서 걸어가기.cpp" />
     <ClCompile Include="미로 탐색.cpp" />
     <ClCompile Include="바이러스.cpp" />
     <ClCompile Include="빙산.cpp" />
     <ClCompile Include="숨박꼭질.cpp" />
     <ClCompile Include="스타트링크.cpp" />
+    <ClCompile Include="아이템 줍기.cpp" />
     <ClCompile Include="안전영역.cpp" />
+    <ClCompile Include="여행경로.cpp" />
     <ClCompile Include="촌수계산.cpp" />
+    <ClCompile Include="타겟 넘버.cpp" />
     <ClCompile Include="토마토.cpp" />
+    <ClCompile Include="퍼즐 조각 채우기.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
