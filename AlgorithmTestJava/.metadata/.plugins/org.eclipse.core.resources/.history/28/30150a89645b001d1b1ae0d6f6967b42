@@ -1,0 +1,117 @@
+import java.util.*;
+
+public class puzzle {
+	public static void main(String[] args) {
+		int[][] game_board = {
+				{1,1,0,0,1,0},
+				{0,0,1,0,1,0},
+				{0,1,1,0,1,1},
+				{1,1,0,1,1,1},
+				{1,0,0,0,1,0},
+				{0,1,1,1,0,0}};
+		int[][] table = {
+				{1,0,0,1,1,0},
+				{1,0,1,0,1,0},
+				{0,1,1,0,1,1},
+				{0,0,1,0,0,0},
+				{1,1,0,1,1,0},
+				{0,1,0,0,0,0}};
+		Solution sol = new Solution();
+		System.out.println(sol.solution(game_board, table));
+	}
+}
+
+class Solution {
+	final int MAX = 52;
+	final int SHAPE = 7;
+	
+	int[][] bd = new int[MAX][MAX], tb = new int[MAX][MAX];
+	int[] bdCnt = new int[SHAPE], tbCnt = new int[SHAPE];
+	
+	List<int[]> bPos = new ArrayList<>(SHAPE);
+	Map<Integer, int[]> tPos = new HashMap<>(SHAPE);
+	int[][] flag = new int[MAX][MAX];
+	int[] di = {1,0,-1,0};
+	int[] dj = {0,1,0,-1};
+	int N, sCnt;
+	
+    public int solution(int[][] game_board, int[][] table) {
+        int answer = -1;
+        N = game_board.length;
+        bd = boardReverse(game_board);
+        tb = table;
+        
+        //도형 갯수 카운트와 좌표확인
+        for(int i=0; i<N; i++) {
+        	for(int j=0; j<N; j++) {
+        		if(bd[i][j] == 1) {
+        			sCnt=0;
+        			shapeCntDFS(bd, i, j);
+        			bdCnt[sCnt]++;
+        			for(int f=0; f<N; f++) Arrays.fill(flag[f], 0);
+        			
+        			if(sCnt > 3) {
+        				bPos.add(sCnt, new int[]{i,j});
+        			}
+        		}
+        		if(tb[i][j] == 1) {
+        			sCnt=0;
+        			shapeCntDFS(tb, i, j);
+        			tbCnt[sCnt]++;
+        			for(int f=0; f<N; f++) Arrays.fill(flag[f], 0);
+        			
+        			if(sCnt > 3) {
+        				tPos.put(sCnt, new int[] {i,j});
+        			}
+        		}
+        	}
+        }
+        
+        
+        return answer;
+    }
+        
+    public int[][] boardReverse(int[][] board){
+    	for(int i=0; i < N; i++) {
+    		for(int j=0; j< N; j++) {
+    			if(board[i][j] == 1) board[i][j]=0;
+    			else board[i][j]=1;
+    		}
+    	}
+    	return board;
+    }
+    
+
+    public void shapeCntDFS(int board[][], int fi, int fj) {
+    	flag[fi][fj] = 1;
+    	sCnt++;
+    	for(int d=0; d<4; d++) {
+    		int ni = fi+di[d], nj = fj+dj[d];
+    		if(ni>=0 && nj>=0 && ni<N && nj<N 
+    				&& board[ni][nj]==1 && flag[ni][nj]==0) {
+    			shapeCntDFS(board, ni, nj);
+    		}
+    	}
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

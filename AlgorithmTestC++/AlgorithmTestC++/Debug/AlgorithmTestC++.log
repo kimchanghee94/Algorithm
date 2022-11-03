@@ -1,22 +1,30 @@
-﻿빌드 시작: 2022-11-02 오전 5:09:41
+﻿빌드 시작: 2022-11-04 오전 3:15:09
      1>2 노드의 "E:\GitAlgoStudy\AlgorithmTestC++\AlgorithmTestC++\AlgorithmTestC++.vcxproj" 프로젝트(Build 대상)입니다.
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "빙산.cpp"
-         빙산.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "퍼즐 조각 채우기.cpp"
+         퍼즐 조각 채우기.cpp
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\GitAlgoStudy\AlgorithmTestC++\Debug\AlgorithmTestC++.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\GitAlgoStudy\AlgorithmTestC++\Debug\AlgorithmTestC++.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\GitAlgoStudy\AlgorithmTestC++\Debug\AlgorithmTestC++.lib" /MACHINE:X86 "Debug\DFS와 BFS.obj"
+         "Debug\게임 맵 최단거리.obj"
+         "Debug\네트워크.obj"
+         "Debug\단어 변환.obj"
          "Debug\단지번호붙이기.obj"
+         "Debug\맥주 마시면서 걸어가기.obj"
          "Debug\미로 탐색.obj"
          "Debug\바이러스.obj"
          "Debug\빙산.obj"
          "Debug\숨박꼭질.obj"
          "Debug\스타트링크.obj"
+         "Debug\아이템 줍기.obj"
          "Debug\안전영역.obj"
+         "Debug\여행경로.obj"
          "Debug\촌수계산.obj"
+         "Debug\타겟 넘버.obj"
          "Debug\토마토.obj"
+         "Debug\퍼즐 조각 채우기.obj"
          AlgorithmTestC++.vcxproj -> E:\GitAlgoStudy\AlgorithmTestC++\Debug\AlgorithmTestC++.exe
      1>"E:\GitAlgoStudy\AlgorithmTestC++\AlgorithmTestC++\AlgorithmTestC++.vcxproj" 프로젝트를 빌드했습니다(Build 대상).
 
 빌드했습니다.
 
-경과 시간: 00:00:00.58
+경과 시간: 00:00:01.04

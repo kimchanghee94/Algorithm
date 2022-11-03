@@ -1,0 +1,16 @@
+
+public class puzzle {
+	public static void main(String[] args) {
+		int[][] game_board = {{1,1,0,0,1,0},{0,0,1,0,1,0},{0,1,1,0,0,1},{1,1,0,1,1,1},{1,0,0,0,1,0},{0,1,1,1,0,0}};
+		int[][] table = {{1,0,0,1,1,0},{1,0,1,0,1,0},{0,1,1,0,1,1},{0,0,1,0,0,0},{1,1,0,1,1,0},{0,1,0,0,0,0}};
+		Solution sol = new Solution();
+		System.out.println(sol.solution(game_board, table));
+	}
+}
+
+class Solution {
+    public int solution(int[][] game_board, int[][] table) {
+        int answer = -1;
+        return answer;
+    }
+}

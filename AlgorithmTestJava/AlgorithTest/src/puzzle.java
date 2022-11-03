@@ -1,0 +1,136 @@
+import java.util.*;
+
+/*public class puzzle {
+	public static void main(String[] args) {
+		int[][] game_board = {
+				{1,1,0,0,1,0},
+				{0,0,1,0,1,0},
+				{0,1,1,0,0,1},
+				{1,1,0,1,1,1},
+				{1,0,0,0,1,0},
+				{0,1,1,1,0,0}};
+		int[][] table = {
+				{1,0,0,1,1,0},
+				{1,0,1,0,1,0},
+				{0,1,1,0,1,1},
+				{0,0,1,0,0,0},
+				{1,1,0,1,1,0},
+				{0,1,0,0,0,0}};
+		Solution sol = new Solution();
+		System.out.println(sol.solution(game_board, table));
+	}
+}
+
+class Solution {
+	final int MAX = 52;
+	final int SHAPE = 7;
+	
+	int[][] bd = new int[MAX][MAX], tb = new int[MAX][MAX];
+	int[] bdCnt = new int[SHAPE], tbCnt = new int[SHAPE];
+	
+	List<int[]>[] bdS = new ArrayList[SHAPE];
+	List<int[]>[] tdS = new ArrayList[SHAPE];
+
+	int[][] flag = new int[MAX][MAX];
+	int[] di = {1,0,-1,0};
+	int[] dj = {0,1,0,-1};
+	int N, sCnt;
+	
+    public int solution(int[][] game_board, int[][] table) {
+        int answer = -1;
+        N = game_board.length;
+        bd = boardReverse(game_board);
+        tb = table;
+        
+        for(int i=0; i<SHAPE; i++) {
+        	bdS[i] = new ArrayList<>();
+        	tdS[i] = new ArrayList<>();
+        }
+        
+        //도형 갯수 카운트와 좌표확인
+        chkCntPos(bd, bdS, bdCnt);
+        chkCntPos(tb, tdS, tbCnt);
+        
+        //4,5,6개 블록에 대해 회전을 해가며 매칭을 한다.
+        match();        
+        
+        return answer;
+    }
+    
+    public void match() {
+    	for(int i=4; i<SHAPE; i++) {
+        	while(bdCnt[i]>0 && tbCnt[i]>0) {
+        		int chk = 0;
+        		//맞지 않을 경우 로테이션을 한다.
+        		for(int d=0; d<4 && chk==0; d++) {
+        			
+        		}
+        	}
+        }
+    }
+    
+    public void chkCntPos(int[][] board, List<int[]>[] list, int[] shapeCnt) {
+    	for(int f=0; f<N; f++) Arrays.fill(flag[f], 0);
+    	for(int i=0; i<N; i++) {
+        	for(int j=0; j<N; j++) {
+        		if(board[i][j] == 1 && flag[i][j] == 0) {
+        			sCnt=0;
+        			shapeCntDFS(board, i, j);
+        			shapeCnt[sCnt]++;  			
+        			if(sCnt > 3) {
+        				list[sCnt].add(new int[] {i,j});
+        			}
+        		}
+        	}
+        }
+    }
+        
+    public int[][] boardReverse(int[][] board){
+    	for(int i=0; i < N; i++) {
+    		for(int j=0; j< N; j++) {
+    			if(board[i][j] == 1) board[i][j]=0;
+    			else board[i][j]=1;
+    		}
+    	}
+    	return board;
+    }
+    
+
+    public void shapeCntDFS(int board[][], int fi, int fj) {
+    	flag[fi][fj] = 1;
+    	sCnt++;
+    	for(int d=0; d<4; d++) {
+    		int ni = fi+di[d], nj = fj+dj[d];
+    		if(ni>=0 && nj>=0 && ni<N && nj<N 
+    				&& board[ni][nj]==1 && flag[ni][nj]==0) {
+    			shapeCntDFS(board, ni, nj);
+    		}
+    	}
+    }
+    
+    public void matchDFS(int board[][], int fi, int fj) {
+    	flag[fi][fj] = 1;
+    	
+    }
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

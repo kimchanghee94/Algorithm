@@ -1,0 +1,76 @@
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class puzzle {
+	public static void main(String[] args) {
+		int[][] game_board = {
+				{1,1,0,0,1,0},
+				{0,0,1,0,1,0},
+				{0,1,1,0,0,1},
+				{1,1,0,1,1,1},
+				{1,0,0,0,1,0},
+				{0,1,1,1,0,0}};
+		int[][] table = {
+				{1,0,0,1,1,0},
+				{1,0,1,0,1,0},
+				{0,1,1,0,1,1},
+				{0,0,1,0,0,0},
+				{1,1,0,1,1,0},
+				{0,1,0,0,0,0}};
+		Solution sol = new Solution();
+		System.out.println(sol.solution(game_board, table));
+	}
+}
+
+class Solution {
+	final int MAX = 52;
+	final int SHAPE = 7;
+	
+	int[][] bd = new int[MAX][MAX], tb = new int[MAX][MAX];
+	int[] bdS = new int[SHAPE], tbS = new int[SHAPE];
+	
+    public int solution(int[][] game_board, int[][] table) {
+        int answer = -1;
+        boardReverse(game_board);
+        boardReverse(table);
+        System.out.println(Arrays.toString(game_board));
+        dfs(game_board, table);
+        
+        return answer;
+    }
+    
+    void dfs(int[][] game_board, int[][] table) {
+    	
+    }
+    
+    void boardReverse(int[][] board){
+    	for(int i=0; i < board.length; i++) {
+    		for(int j=0; j< board[i].length; j++) {
+    			if(board[i][j] == 1) board[i][j]=1;
+    			else board[i][j]=0;
+    		}
+    	}
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
