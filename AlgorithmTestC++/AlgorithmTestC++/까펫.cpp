@@ -2,17 +2,17 @@
 #include <vector>
 using namespace std;
 
-void backtrack(int brown, int yellow){
-	for (int i = 1; i < yellow / 2; i++){
-
+int backtrack(int total){
+	int width = 3000000, height = 0;
+	for (int h = 3; h < total && h <= width; h++){
+		if (width);
 	}
 }
-
 
 vector<int> solution(int brown, int yellow) {
 	vector<int> answer;
 
-	backtrack(brown, yellow);
+	backtrack(brown + yellow);
 
 	return answer;
 }
