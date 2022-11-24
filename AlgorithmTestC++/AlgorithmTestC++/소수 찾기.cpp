@@ -23,7 +23,8 @@ void backtrack(string numbers, string tmp, int cnt){
 			backtrack(numbers, tmp + numbers[i], cnt + 1);
 			flag[i] = 0;
 		}
-		backtrack(numbers, tmp, cnt + 1);
+		//쓸모없어서 주석처리
+		//backtrack(numbers, tmp, cnt + 1);
 	}
 }
 
