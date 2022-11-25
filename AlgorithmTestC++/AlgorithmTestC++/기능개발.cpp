@@ -1,12 +1,13 @@
-#include <string>
+/*#include <string>
 #include <vector>
 using namespace std;
 
 vector<int> solution(vector<int> progresses, vector<int> speeds) {
 	vector<int> answer;
-	
+	int chk_cnt = 0;
+
 	while (!progresses.empty()){
-		int chk_cnt = 0;
+
 		if (progresses[0] < 100){
 			if (chk_cnt > 0) {
 				answer.push_back(chk_cnt);
@@ -22,10 +23,11 @@ vector<int> solution(vector<int> progresses, vector<int> speeds) {
 		}
 		else{
 			chk_cnt++;
-			progresses.erase(progresses.begin() + 1);
-			speeds.erase(speeds.begin() + 1);
+			progresses.erase(progresses.begin());
+			speeds.erase(speeds.begin());
 		}
 	}
+	answer.push_back(chk_cnt);
 
 	return answer;
-}
+}*/
