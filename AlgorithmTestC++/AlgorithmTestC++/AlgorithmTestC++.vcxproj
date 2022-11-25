@@ -79,9 +79,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="DFS와 BFS.cpp" />
+    <ClCompile Include="H-Index.cpp" />
+    <ClCompile Include="K번째수.cpp" />
+    <ClCompile Include="가장 큰 수.cpp" />
     <ClCompile Include="게임 맵 최단거리.cpp" />
     <ClCompile Include="모음사전.cpp" />
+    <ClCompile Include="베스트앨범.cpp" />
+    <ClCompile Include="완주하지 못한 선수.cpp" />
+    <ClCompile Include="위장.cpp" />
     <ClCompile Include="전력망을 둘로 나누기.cpp" />
+    <ClCompile Include="전화번호 목록.cpp" />
     <ClCompile Include="카펫.cpp" />
     <ClCompile Include="네트워크.cpp" />
     <ClCompile Include="단어 변환.cpp" />
@@ -101,6 +108,7 @@
     <ClCompile Include="타겟 넘버.cpp" />
     <ClCompile Include="토마토.cpp" />
     <ClCompile Include="퍼즐 조각 채우기.cpp" />
+    <ClCompile Include="폰켓몬.cpp" />
     <ClCompile Include="피로도.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
