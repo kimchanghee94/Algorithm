@@ -1,7 +1,7 @@
-#include <string>
+/*#include <string>
 #include <vector>
 #include <stack>
-using namespace std;
+using namespace std;*/
 
 //2중 포문으로 해결(시간복잡도 해결 못해줄 듯...)
 /*vector<int> solution(vector<int> prices) {
@@ -26,8 +26,7 @@ using namespace std;
 
 
 //stack으로 해본다면...
-
-vector<int> solution(vector<int> prices) {
+/*vector<int> solution(vector<int> prices) {
 	vector<int> answer(prices.size());
 	stack<int> s;
 	int size = prices.size();
@@ -46,4 +45,4 @@ vector<int> solution(vector<int> prices) {
 		s.pop();
 	}
 	return answer;
-}
+}*/

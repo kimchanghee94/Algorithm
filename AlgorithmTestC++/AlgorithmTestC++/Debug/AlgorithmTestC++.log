@@ -1,23 +1,29 @@
-﻿빌드 시작: 2022-11-25 오후 10:20:12
+﻿빌드 시작: 2022-11-27 오전 1:47:23
      1>2 노드의 "E:\GitAlgoStudy\AlgorithmTestC++\AlgorithmTestC++\AlgorithmTestC++.vcxproj" 프로젝트(Build 대상)입니다.
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "베스트앨범.cpp"
-         베스트앨범.cpp
-     1>e:\gitalgostudy\algorithmtestc++\algorithmtestc++\베스트앨범.cpp(19): warning C4018: '<' : signed 또는 unsigned가 일치하지 않습니다.
-     1>e:\gitalgostudy\algorithmtestc++\algorithmtestc++\베스트앨범.cpp(22): warning C4018: '<' : signed 또는 unsigned가 일치하지 않습니다.
-     1>e:\gitalgostudy\algorithmtestc++\algorithmtestc++\베스트앨범.cpp(26): warning C4018: '<' : signed 또는 unsigned가 일치하지 않습니다.
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "디스크 컨트롤러.cpp"
+         디스크 컨트롤러.cpp
+     1>e:\gitalgostudy\algorithmtestc++\algorithmtestc++\디스크 컨트롤러.cpp(30): warning C4018: '<' : signed 또는 unsigned가 일치하지 않습니다.
+     1>e:\gitalgostudy\algorithmtestc++\algorithmtestc++\디스크 컨트롤러.cpp(34): warning C4018: '<' : signed 또는 unsigned가 일치하지 않습니다.
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\GitAlgoStudy\AlgorithmTestC++\Debug\AlgorithmTestC++.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\GitAlgoStudy\AlgorithmTestC++\Debug\AlgorithmTestC++.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\GitAlgoStudy\AlgorithmTestC++\Debug\AlgorithmTestC++.lib" /MACHINE:X86 "Debug\DFS와 BFS.obj"
          "Debug\H-Index.obj"
          "Debug\K번째수.obj"
          "Debug\가장 큰 수.obj"
+         "Debug\같은 숫자는 싫어.obj"
          "Debug\게임 맵 최단거리.obj"
+         "Debug\기능개발.obj"
+         "Debug\다리를 지나는 트럭.obj"
+         "Debug\더 맵게.obj"
+         "Debug\디스크 컨트롤러.obj"
          "Debug\모음사전.obj"
          "Debug\베스트앨범.obj"
+         "Debug\올바른 괄호.obj"
          "Debug\완주하지 못한 선수.obj"
          "Debug\위장.obj"
          "Debug\전력망을 둘로 나누기.obj"
          "Debug\전화번호 목록.obj"
+         "Debug\주식가격.obj"
          "Debug\카펫.obj"
          "Debug\네트워크.obj"
          "Debug\단어 변환.obj"
@@ -38,10 +44,11 @@
          "Debug\토마토.obj"
          "Debug\퍼즐 조각 채우기.obj"
          "Debug\폰켓몬.obj"
+         "Debug\프린터.obj"
          "Debug\피로도.obj"
          AlgorithmTestC++.vcxproj -> E:\GitAlgoStudy\AlgorithmTestC++\Debug\AlgorithmTestC++.exe
      1>"E:\GitAlgoStudy\AlgorithmTestC++\AlgorithmTestC++\AlgorithmTestC++.vcxproj" 프로젝트를 빌드했습니다(Build 대상).
 
 빌드했습니다.
 
-경과 시간: 00:00:01.81
+경과 시간: 00:00:01.03
