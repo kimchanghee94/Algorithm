@@ -1,10 +1,11 @@
-﻿빌드 시작: 2022-11-27 오전 1:47:23
+﻿빌드 시작: 2022-11-27 오후 5:33:57
      1>2 노드의 "E:\GitAlgoStudy\AlgorithmTestC++\AlgorithmTestC++\AlgorithmTestC++.vcxproj" 프로젝트(Build 대상)입니다.
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "디스크 컨트롤러.cpp"
-         디스크 컨트롤러.cpp
-     1>e:\gitalgostudy\algorithmtestc++\algorithmtestc++\디스크 컨트롤러.cpp(30): warning C4018: '<' : signed 또는 unsigned가 일치하지 않습니다.
-     1>e:\gitalgostudy\algorithmtestc++\algorithmtestc++\디스크 컨트롤러.cpp(34): warning C4018: '<' : signed 또는 unsigned가 일치하지 않습니다.
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "체육복.cpp"
+         체육복.cpp
+     1>e:\gitalgostudy\algorithmtestc++\algorithmtestc++\체육복.cpp(13): warning C4018: '<' : signed 또는 unsigned가 일치하지 않습니다.
+     1>e:\gitalgostudy\algorithmtestc++\algorithmtestc++\체육복.cpp(14): warning C4018: '<' : signed 또는 unsigned가 일치하지 않습니다.
+     1>e:\gitalgostudy\algorithmtestc++\algorithmtestc++\체육복.cpp(15): warning C4018: '<' : signed 또는 unsigned가 일치하지 않습니다.
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\GitAlgoStudy\AlgorithmTestC++\Debug\AlgorithmTestC++.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\GitAlgoStudy\AlgorithmTestC++\Debug\AlgorithmTestC++.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\GitAlgoStudy\AlgorithmTestC++\Debug\AlgorithmTestC++.lib" /MACHINE:X86 "Debug\DFS와 BFS.obj"
          "Debug\H-Index.obj"
@@ -21,9 +22,11 @@
          "Debug\올바른 괄호.obj"
          "Debug\완주하지 못한 선수.obj"
          "Debug\위장.obj"
+         "Debug\이중우선순위큐.obj"
          "Debug\전력망을 둘로 나누기.obj"
          "Debug\전화번호 목록.obj"
          "Debug\주식가격.obj"
+         "Debug\체육복.obj"
          "Debug\카펫.obj"
          "Debug\네트워크.obj"
          "Debug\단어 변환.obj"
@@ -51,4 +54,4 @@
 
 빌드했습니다.
 
-경과 시간: 00:00:01.03
+경과 시간: 00:00:01.45
