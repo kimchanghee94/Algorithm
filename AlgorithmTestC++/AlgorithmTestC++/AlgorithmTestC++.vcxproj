@@ -84,6 +84,7 @@
     <ClCompile Include="가장 큰 수.cpp" />
     <ClCompile Include="같은 숫자는 싫어.cpp" />
     <ClCompile Include="게임 맵 최단거리.cpp" />
+    <ClCompile Include="구명보트.cpp" />
     <ClCompile Include="기능개발.cpp" />
     <ClCompile Include="다리를 지나는 트럭.cpp" />
     <ClCompile Include="더 맵게.cpp" />
@@ -96,6 +97,7 @@
     <ClCompile Include="이중우선순위큐.cpp" />
     <ClCompile Include="전력망을 둘로 나누기.cpp" />
     <ClCompile Include="전화번호 목록.cpp" />
+    <ClCompile Include="조이스틱.cpp" />
     <ClCompile Include="주식가격.cpp" />
     <ClCompile Include="체육복.cpp" />
     <ClCompile Include="카펫.cpp" />
@@ -114,6 +116,7 @@
     <ClCompile Include="여행경로.cpp" />
     <ClCompile Include="촌수계산.cpp" />
     <ClCompile Include="최소직사각형.cpp" />
+    <ClCompile Include="큰 수 만들기.cpp" />
     <ClCompile Include="타겟 넘버.cpp" />
     <ClCompile Include="토마토.cpp" />
     <ClCompile Include="퍼즐 조각 채우기.cpp" />
