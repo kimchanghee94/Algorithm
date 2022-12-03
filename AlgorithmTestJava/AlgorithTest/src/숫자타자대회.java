@@ -1,11 +1,11 @@
-import java.util.Arrays;
+/*import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;
 
 public class 숫자타자대회{
 	public static void main(String[] args) {
 		Solution sol = new Solution();
-		sol.solution("1756");
+		sol.solution("5123");
 	}
 }
 
@@ -25,15 +25,17 @@ class Solution {
     
     static public int bfs(String numbers) {
     	int answer = 0;
-        lq.add(new int[] {1,0});
-        rq.add(new int[] {1,2});
         int loi = 1, loj = 0, roi = 1, roj = 2;
-        flag[1][0] = 1;
-        flag[1][2] = 1;
         
     	for(int s=0; s<numbers.length(); s++) {
             int firstChk = 0;
-            
+			for(int i=0; i<H; i++) Arrays.fill(flag[i], 0);
+
+            flag[loi][loj] = 1;
+            flag[roi][roj] = 1;
+            lq.add(new int[] {loi, loj});
+            rq.add(new int[] {roi, roj});
+
     		while(!lq.isEmpty() || !rq.isEmpty()) {
     			int[] tmp = lq.poll();
         		if(tmp == null) break;
@@ -43,24 +45,24 @@ class Solution {
                 if(tmp == null) break;
         		int rfi = tmp[0], rfj = tmp[1];
         		if(graph[lfi].charAt(lfj) == numbers.charAt(s)) {
-        			if(firstChk == 1)answer += flag[lfi][lfj] - 1;
+        			if(firstChk == 1)answer += (flag[lfi][lfj] - 1);
         			else answer += flag[lfi][lfj];
         			
+        			loi = lfi;
+        			loj = lfj;
         			finChk = 1;		
         		}else if(graph[rfi].charAt(rfj) == numbers.charAt(s)) {
-        			if(firstChk == 1)answer += flag[rfi][rfj] - 1;
+        			if(firstChk == 1)answer += (flag[rfi][rfj] - 1);
         			else answer += flag[rfi][rfj];
+        			
+        			roi = rfi;
+        			roj = rfj;
         			finChk = 1;
         		}
         		
         		if(finChk == 1) {
         			lq.clear();
         			rq.clear();
-        			lq.add(new int[] {lfi, lfj});
-        			rq.add(new int[] {rfi, rfj});
-        			for(int i=0; i<H; i++) Arrays.fill(flag[i], 0);
-        			flag[lfi][lfj] = 1;
-        			flag[rfi][rfj] = 1;
         			break;
         		}
         		for(int d=0; d<8; d++) {
@@ -89,4 +91,4 @@ class Solution {
     	}
     	return answer;
     }
-}
+}*/
