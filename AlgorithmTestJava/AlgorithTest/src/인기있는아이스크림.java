@@ -1,0 +1,4 @@
+/*
+SELECT FLAVOR FROM FIRST_HALF  						//FIRST_HALF 테이블에서 FLAVOR 열을 고른다. 
+ORDER BY TOTAL_ORDER DESC, SHIPMENT_ID				//TOTAL_ORDER는 내림차순 그중에서 동일한 경우 SHIPMENT_ID는 오름차순으로 설정
+*/

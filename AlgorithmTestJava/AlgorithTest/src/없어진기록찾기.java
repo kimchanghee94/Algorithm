@@ -1,0 +1,5 @@
+/*
+SELECT ANIMAL_OUTS.ANIMAL_ID, ANIMAL_OUTS.NAME FROM ANIMAL_OUTS               		//테이블에서 표출할 선택한 열들
+LEFT OUTER JOIN ANIMAL_INS ON ANIMAL_OUTS.ANIMAL_ID = ANIMAL_INS.ANIMAL_ID			//OUT테이블 기준으로 IN테이블을 붙일 건데 ID가 일치하는 애들은 붙이고 없으면 IN테이블쪽은 널로 들어간다.
+WHERE ANIMAL_INS.ANIMAL_ID is Null ORDER BY ANIMAL_OUTS.ANIMAL_ID					//IN테이블이 NULL인 애들에 대해서 ANIMAL ID기준으로 오름차순 출력
+*/
